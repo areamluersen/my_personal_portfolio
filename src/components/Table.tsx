@@ -3,12 +3,12 @@ import { RedirectButton } from './RedirectButton';
 
 const Table: React.FC = () => {
   return (
-    <table className="table-auto text-2xl">
+    <table className="text-xs sm:text-base md:text-lg lg:text-xl overflow-scroll w-full md:w-8/12 lg:w-8/12 xl:w-6/12 ">
       <thead>
         <tr>
-          <th className="rounded-l-2xl bg-dark-850 px-4">Page</th>
-          <th className="bg-dark-850 mx-2">Description</th>
-          <th className="rounded-r-2xl bg-dark-850 px-4">Access</th>
+          <th className="rounded-l-2xl bg-dark-850 px-4  ">Page</th>
+          <th className="bg-dark-850 mx-2 text-xs ">Description</th>
+          <th className="rounded-r-2xl bg-dark-850 px-4 text-xs">Access</th>
         </tr>
       </thead>
       <tbody>
