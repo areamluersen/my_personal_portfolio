@@ -1,12 +1,21 @@
+import { useState } from 'react';
 import { devData } from '../data/DevData';
-import githubClaroSvg from '../icons/github_claro.svg';
+import githubClaroSvg from '../icons/githubClaro.svg';
+import userIconDefault from '../icons/userIconDefault.png'
 
 export function CardUser() {
+  const [avatarUrl, setAvatarUrl] = useState(userIconDefault);
+  fetch(`https://api.github.com/users/${devData.person.githubAccount}`)
+  .then(resp => resp.json())
+  .then((data:  {avatar_url: string}) => {
+    console.log('data: ', data)
+    setAvatarUrl(data.avatar_url)
+  })
   return (
     <div className="bg-dark-900 p-2 mb-20 rounded-lg grid grid-cols-3 shadow-lg">
       <div className="flex justify-start w-28 p-2">
         <img
-          src={'https://avatars.githubusercontent.com/u/24281509?v=4'}
+          src={avatarUrl} // TODO - get avatar from user
           className="rounded-full"
           alt="logo"
         />
