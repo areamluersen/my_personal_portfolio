@@ -7,9 +7,8 @@ export function CardUser() {
   const [avatarUrl, setAvatarUrl] = useState(userIconDefault);
   fetch(`https://api.github.com/users/${devData.person.githubAccount}`)
   .then(resp => resp.json())
-  .then((data:  {avatar_url: string}) => {
-    console.log('data: ', data)
-    setAvatarUrl(data.avatar_url)
+  .then((data:  {avatar_url?: string}) => {
+    if(data.avatar_url) setAvatarUrl(data.avatar_url)
   })
   return (
     <div className="bg-dark-900 p-2 mb-20 rounded-lg grid grid-cols-3 shadow-lg">
