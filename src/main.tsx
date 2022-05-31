@@ -5,7 +5,8 @@ import './App.css';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './components/LoginPage';
-import Home from './Home';
+import Home from './components/Home';
+import { NewLayout } from './components/NewLayout';
 
 function Places() {
   return (
@@ -13,6 +14,7 @@ function Places() {
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/" element={<Home />} />
+        <Route path="/new" element={<NewLayout />} />
       </Routes>
     </div>
   );

@@ -15,12 +15,16 @@ const Table: React.FC = () => {
         <tr className="border-b">
           <td>Login</td>
           <td className="px-10">Recreate Login Page of Tripsy</td>
-          <RedirectButton name="Login Page" redirectsTo="/login" />
+          <td>
+            <RedirectButton name="Login Page" redirectsTo="/login" />
+          </td>
         </tr>
         <tr className="border-b">
           <td>Geoprocessing</td>
           <td>Geo Estado Nutricional do Brasil</td>
-          <td>Soon</td>
+          <td>
+            <RedirectButton name="New Layout" redirectsTo="/new" />
+          </td>
         </tr>
       </tbody>
     </table>
