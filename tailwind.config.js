@@ -3,6 +3,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: '#ffffffde',
+        secondary: '#BB86FC',
         'dark-50': '#FAFAFA',
         'dark-100': '#F5F5F5',
         'dark-200': '#EEEEEE',
@@ -15,6 +17,9 @@ module.exports = {
         'dark-850': '#303030',
         'dark-900': '#212121',
         'dark-950': '#121212',
+      },
+      fontFamily: {
+        roboto: ['Roboto Mono', 'monospace'],
       },
     },
   },
