@@ -16,7 +16,7 @@ const NewLayout: React.FC = () => {
           <span className="font-light">Contact</span>
         </div>
       </div>
-      <div className="flex w-full mt-10 mx-8 align-middle items-center">
+      <div className="flex w-full mt-10 px-8 align-middle items-center">
         <div className="">
           <div className=" grid grid-cols-1">
             <span className="text-5xl font-medium leading-tight pb-6">Dhonny Jeep</span>
