@@ -32,7 +32,7 @@ const NewLayout: React.FC = () => {
             <button className="flex items-center transition-all duration-500 ease-in-out hover:text-linkedin">
               <LinkedinLogo className="w-8" /> linkedin
             </button>
-            <button className="flex items-center transition-all duration-500 ease-in-out hover:text-cyan-600">
+            <button className="flex items-center transition-all duration-500 ease-in-out hover:text-violet-500">
               <GithubLogo className="w-8" /> github
             </button>
             <button className="flex items-center transition-all duration-500 ease-in-out hover:text-instagram">
