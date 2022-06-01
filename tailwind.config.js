@@ -5,6 +5,9 @@ module.exports = {
       colors: {
         primary: '#ffffffde',
         secondary: '#BB86FC',
+        linkedin: '#0077B5',
+        github: '#24292e',
+        instagram: '#e1306c',
         'dark-50': '#FAFAFA',
         'dark-100': '#F5F5F5',
         'dark-200': '#EEEEEE',
