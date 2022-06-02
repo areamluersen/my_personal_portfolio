@@ -1,5 +1,4 @@
-import React, { useCallback } from 'react';
-import { RedirectButton } from '../RedirectButton';
+import React from 'react';
 import { GithubLogo, InstagramLogo, LinkedinLogo, RocketLaunch } from 'phosphor-react';
 
 const NewLayout: React.FC = () => {
@@ -9,11 +8,19 @@ const NewLayout: React.FC = () => {
         <div className="flex">
           <RocketLaunch size={32} />
         </div>
-        <div>
-          <span className="font-light pr-8">Home</span>
-          <span className="font-light">About</span>
-          <span className="font-light px-8">Projects</span>
-          <span className="font-light">Contact</span>
+        <div className="">
+          <button className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-light p-2">
+            Home
+          </button>
+          <button className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-light p-2">
+            About
+          </button>
+          <button className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-light p-2">
+            Projects
+          </button>
+          <button className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-light pl-2">
+            Contact
+          </button>
         </div>
       </div>
       <div className="flex w-full mt-10 px-8 align-middle items-center">
@@ -24,7 +31,7 @@ const NewLayout: React.FC = () => {
             <span className="w-1/4 pt-2 border-b hover:w-2/3 transition-all duration-500 ease-in-out" />
           </div>
           <div className="py-28">
-            <button className="text-2xl font-normal transition-all duration-700 ease-in-out border-x border-b hover:bg-primary hover:text-black p-2">
+            <button className="text-2xl font-normal transition-all duration-700 ease-in-out border hover:bg-primary hover:text-black p-2">
               My Projects
             </button>
           </div>
