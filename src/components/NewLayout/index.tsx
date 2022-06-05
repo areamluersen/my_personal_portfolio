@@ -11,16 +11,12 @@ const NewLayout: React.FC = () => {
           <RocketLaunch size={32} />
         </div>
         <div className="">
-          <button className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-light p-2">
-            Home
-          </button>
-          <button className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-light p-2">
-            About
-          </button>
-          <button className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-light p-2">
+          <button className="text-sm sm:text-xl lg:text-2xl font-light p-2">Home</button>
+          <button className="text-sm sm:text-xl lg:text-2xl font-light p-2">About</button>
+          <button className="text-sm sm:text-xl lg:text-2xl font-light p-2">
             Projects
           </button>
-          <button className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-light pl-2">
+          <button className="text-sm sm:text-xl lg:text-2xl font-light pl-2">
             Contact
           </button>
         </div>
@@ -28,10 +24,10 @@ const NewLayout: React.FC = () => {
       <div className="flex w-full mt-10 px-8 align-middle items-center">
         <div className="">
           <div className=" grid grid-cols-1">
-            <span className="text-5xl font-medium leading-tight pb-6">
+            <span className="text-4xl sm:text-5xl font-medium leading-tight pb-6">
               {person.name} {person.surname}
             </span>
-            <span className="text-3xl font-light">{person.title}</span>
+            <span className="text-2xl sm:text-3xl font-light">{person.title}</span>
             <span className="w-1/4 pt-2 border-b hover:w-2/3 transition-all duration-500 ease-in-out" />
           </div>
           <div className="py-28">
@@ -39,12 +35,14 @@ const NewLayout: React.FC = () => {
               onClick={() =>
                 open(`https://github.com/${person.githubAccount}?tab=repositories`)
               }
-              className="text-2xl font-normal transition-all duration-700 ease-in-out border hover:bg-primary hover:text-black p-2"
+              className="text-xl sm:text-2xl font-normal transition-all duration-700 ease-in-out border hover:bg-primary hover:text-black p-2"
             >
               My Projects
             </button>
           </div>
-          <div className="text-2xl font-light flex transition-all duration-700 ease-in-out">
+          <div
+            className={`grid-rows-${4} sm:flex text-2xl font-light transition-all duration-700 ease-in-out overflow-hidden`}
+          >
             <a
               href={person.linkedInAccount}
               target="_blank"
