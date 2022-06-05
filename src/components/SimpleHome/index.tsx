@@ -7,13 +7,13 @@ const SimpleHome: React.FC = () => {
   const { person } = devData;
   return (
     <div className="bg-dark-950 min-h-screen w-full  h-full text-primary font-roboto">
-      <div className="flex w-full pt-32  px-6 sm:px-16 md:px-28 align-middle items-center">
+      <div className="flex w-full pt-7 sm:pt-20 xl:pt-28 px-6 sm:px-16 md:px-28 align-middle items-center">
         <div className="">
           <div className="sm:flex sm:flex-row-reverse sm:justify-between">
             <div className="flex justify-center mb-8 sm:mb-0 col-">
               <UserAvatar className="w-36 h-36 sm:w-64 sm:h-64 lg:w-72 lg:h-72" />
             </div>
-            <div className="sm:mr-12 min-w-[250px]">
+            <div className="min-w-[250px]">
               <div className="">
                 <div className="mb-6">
                   <span className="text-3xl sm:text-5xl font-medium leading-tight">
@@ -32,7 +32,7 @@ const SimpleHome: React.FC = () => {
                   {person.shortDescription}
                 </span>
               </div>
-              <div className="flex justify-center sm:justify-start py-9 sm:py-28">
+              <div className="flex justify-center sm:justify-start py-9 sm:py-10 md:py-16 lg:py-28">
                 <button
                   onClick={() =>
                     open(`https://github.com/${person.githubAccount}?tab=repositories`)
@@ -53,7 +53,9 @@ const SimpleHome: React.FC = () => {
               className="flex items-center transition-all duration-500 ease-in-out text-linkedin sm:text-primary hover:text-linkedin hover:bg-primary rounded hover:px-2 px-2 sm:px-1"
             >
               <LinkedinLogo className="w-8" />
-              <span className="w-0 sm:w-full invisible sm:visible">linkedin</span>
+              <span className="font-thin w-0 sm:w-full invisible sm:visible hover:font-light">
+                linkedin
+              </span>
             </a>
             <a
               href={`https://github.com/${person.githubAccount}`}
@@ -61,7 +63,9 @@ const SimpleHome: React.FC = () => {
               className="flex items-center transition-all duration-500 ease-in-out sm:text-primary hover:text-violet-500 hover:bg-primary rounded hover:px-2 px-2 sm:px-1"
             >
               <GithubLogo className="w-8" />{' '}
-              <span className="w-0 sm:w-full invisible sm:visible">github</span>
+              <span className="font-thin w-0 sm:w-full invisible sm:visible hover:font-light">
+                github
+              </span>
             </a>
             <a
               href={person.instagramAccount}
@@ -69,7 +73,9 @@ const SimpleHome: React.FC = () => {
               className="flex items-center transition-all duration-500 ease-in-out text-instagram sm:text-primary hover:text-instagram hover:bg-primary rounded hover:px-2 px-2 sm:px-1"
             >
               <InstagramLogo className="w-8 " />
-              <span className="w-0 sm:w-full invisible sm:visible">instagram</span>
+              <span className="font-thin w-0 sm:w-full invisible sm:visible hover:font-light">
+                instagram
+              </span>
             </a>
           </div>
         </div>
