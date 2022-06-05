@@ -7,7 +7,7 @@ const SimpleHome: React.FC = () => {
   const { person } = devData;
   return (
     <div className="bg-dark-950 min-h-screen w-full  h-full text-primary font-roboto">
-      <div className="flex w-full pt-[15%] px-6 sm:px-16 md:px-28 align-middle items-center">
+      <div className="flex w-full pt-32  px-6 sm:px-16 md:px-28 align-middle items-center">
         <div className="">
           <div className="sm:flex sm:flex-row-reverse sm:justify-between">
             <div className="flex justify-center mb-8 sm:mb-0 col-">
