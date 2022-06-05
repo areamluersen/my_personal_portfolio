@@ -10,5 +10,6 @@ export namespace IDevData {
     linkedInAccount: string;
     instagramAccount: string;
     title: string;
+    shortDescription: string;
   };
 }
