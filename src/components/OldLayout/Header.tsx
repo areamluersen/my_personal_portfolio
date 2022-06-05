@@ -1,5 +1,5 @@
 import React from 'react';
-import { RedirectButton } from './RedirectButton';
+import { RedirectButton } from '../RedirectButton';
 
 // Add option to return home
 const Header: React.FC = () => {

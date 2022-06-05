@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { CardUser } from './CardUser';
 import Header from './Header';
 import List from './Table';
-import { Footer } from '../Footer';
+import { Footer } from '../../Footer';
 
 function Home() {
   return (

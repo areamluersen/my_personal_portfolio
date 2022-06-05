@@ -3,7 +3,7 @@ import { GithubLogo, InstagramLogo, LinkedinLogo, RocketLaunch } from 'phosphor-
 import { devData } from '../../data/DevData';
 import { UserAvatar } from '../UserAvatar';
 
-const NewLayout: React.FC = () => {
+const SimpleHome: React.FC = () => {
   const { person } = devData;
   return (
     <div className="bg-dark-950 min-h-screen w-full  h-full text-primary font-roboto">
@@ -93,4 +93,4 @@ const NewLayout: React.FC = () => {
   );
 };
 
-export { NewLayout };
+export { SimpleHome };

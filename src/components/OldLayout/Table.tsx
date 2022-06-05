@@ -1,5 +1,5 @@
 import React from 'react';
-import { RedirectButton } from './RedirectButton';
+import { RedirectButton } from '../RedirectButton';
 
 const Table: React.FC = () => {
   return (
@@ -23,7 +23,7 @@ const Table: React.FC = () => {
           <td>Geoprocessing</td>
           <td>Geo Estado Nutricional do Brasil</td>
           <td>
-            <RedirectButton name="New Layout" redirectsTo="/new" />
+            <RedirectButton name="New Layout" redirectsTo="/" />
           </td>
         </tr>
       </tbody>

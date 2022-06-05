@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { devData } from '../data/DevData';
-import githubClaroSvg from '../icons/githubClaro.svg';
-import userIconDefault from '../icons/userIconDefault.png';
+import { devData } from '../../data/DevData';
+import githubClaroSvg from '../../icons/githubClaro.svg';
+import userIconDefault from '../../icons/userIconDefault.png';
 
 export function CardUser() {
   const [avatarUrl, setAvatarUrl] = useState(userIconDefault);
