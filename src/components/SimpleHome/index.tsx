@@ -7,22 +7,7 @@ const SimpleHome: React.FC = () => {
   const { person } = devData;
   return (
     <div className="bg-dark-950 min-h-screen w-full  h-full text-primary font-roboto">
-      <div className="px-8 h-20 w-full flex align-middle items-center justify-between header-space-commented-in-simple-design">
-        {/* <div className="flex">
-          <RocketLaunch size={32} />
-        </div>
-        <div className="">
-          <button className="text-sm sm:text-xl lg:text-2xl font-light p-2">Home</button>
-          <button className="text-sm sm:text-xl lg:text-2xl font-light p-2">About</button>
-          <button className="text-sm sm:text-xl lg:text-2xl font-light p-2">
-            Projects
-          </button>
-          <button className="text-sm sm:text-xl lg:text-2xl font-light pl-2">
-            Contact
-          </button>
-        </div> */}
-      </div>
-      <div className="flex w-full mt-10 px-6 sm:px-16 md:px-28 align-middle items-center">
+      <div className="flex w-full pt-[15%] px-6 sm:px-16 md:px-28 align-middle items-center">
         <div className="">
           <div className="sm:flex sm:flex-row-reverse sm:justify-between">
             <div className="flex justify-center mb-8 sm:mb-0 col-">
