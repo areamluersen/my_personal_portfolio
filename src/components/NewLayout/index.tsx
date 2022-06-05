@@ -27,8 +27,10 @@ const NewLayout: React.FC = () => {
             <span className="text-4xl sm:text-5xl font-medium leading-tight pb-6">
               {person.name} {person.surname}
             </span>
-            <span className="text-2xl sm:text-3xl font-light">{person.title}</span>
-            <span className="w-1/4 pt-2 border-b hover:w-2/3 transition-all duration-500 ease-in-out" />
+            <span className="text-2xl sm:text-3xl font-light hover:hr">
+              {person.title}
+            </span>
+            <hr className="w-1/4 h-2 hover:w-2/3 transition-all duration-500 ease-in-out h" />
           </div>
           <div className="py-28">
             <button
@@ -46,21 +48,21 @@ const NewLayout: React.FC = () => {
             <a
               href={person.linkedInAccount}
               target="_blank"
-              className="flex items-center transition-all duration-500 ease-in-out hover:text-linkedin"
+              className="flex items-center transition-all duration-500 ease-in-out hover:text-linkedin hover:bg-primary rounded hover:px-2"
             >
               <LinkedinLogo className="w-8" /> linkedin
             </a>
             <a
               href={`https://github.com/${person.githubAccount}`}
               target="_blank"
-              className="flex items-center transition-all duration-500 ease-in-out hover:text-violet-500"
+              className="flex items-center transition-all duration-500 ease-in-out hover:text-violet-500 hover:bg-primary rounded hover:px-2"
             >
               <GithubLogo className="w-8" /> github
             </a>
             <a
               href={person.instagramAccount}
               target="_blank"
-              className="flex items-center transition-all duration-500 ease-in-out hover:text-instagram"
+              className="flex items-center transition-all duration-500 ease-in-out hover:text-instagram hover:bg-primary rounded hover:px-2"
             >
               <InstagramLogo className="w-8" /> instagram
             </a>
